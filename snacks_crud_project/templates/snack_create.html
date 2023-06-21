@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <form method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input class="bg-green-300" type="submit" value="Create Snack">
+    </form>
+{% endblock content %}
+
+
+

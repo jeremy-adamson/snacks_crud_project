@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% for snack in snacks %}
+        <div>
+            <h2>{{ snack.title }}</h2>
+            <p>Purchaser: {{ snack.purchaser }}</p>
+            <p>Description: {{ snack.description}}</p>
+        </div>
+    {% endfor %}
+{% endblock content %}
+
+
